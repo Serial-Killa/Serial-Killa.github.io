@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">>
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-2021.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
+.list p{
+  max-height: 12px;
+}
+.center{
+display: flex;
+align-items: center;
+justify-content: center
+}
+
+/*Full height image header#Background Image If wanted */
+.bgimg-1 {
+  background-position: center;
+  background-size: cover;
+  min-height: 100%;
+}
+</style>
+</head>
+<body>
+
+<!-- #Navbar (sit on top)-->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card center" id="myNavbar">
+    <a href="#home" class="w3-bar-item w3-button w3-wide">Home</a>
+     <!--#Right-sided navbar links --> 
+    <div class="w3-hide-small">
+      <a href="#skills" class="w3-bar-item w3-button w3-wide">Skills</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header with full-height image -->
+<header class="bgimg-1 w3-display-container w3-2021-inkwell" id="home">
+  <div class="w3-display-left w3-text-white" style="padding:48px">
+    <span class="w3-jumbo w3-hide-small">Hi! I'm Jerad!</span><br>
+    <span class="w3-large">A network and systems engineer who loves learning.</span>
+    <p>I have experiance building, maintaining and troubleshooting networks using a variaity of vendor hardware and scripting languages.</p>
+  </div> 
+</header>
+
+<!-- Skills Section -->
+<div class="w3-container" style="padding:128px 16px" id="skills">
+  <h3 class="w3-center">Skills</h3>
+  <div class="w3-row-padding w3-center" style="margin-top:64px">
+    <div class="w3-quarter">
+      <i class="material-symbols-outlined" style="font-size:48px">dns</i>
+      <p class="w3-large">Virtualization</p>
+      <p>Deploing secured virtual infrastrucutres.</p>
+      <div class="list"> <!--#creates a properly formatted list from CSS.-->
+        <p>Hyper-V</p>
+        <p>Proxmox</p>
+        <p>VMware</p>
+      </div>
+      </p>
+    </div>
+    <div class="w3-quarter">
+      <i class="material-symbols-outlined" style="font-size:48px">lan</i>
+      <p class="w3-large">Networking</p>
+      <p>Proficent with routing and switching along with GUI and CLI.</p>
+      <div class="list"> <!--#creates a properly formatted list from CSS.-->
+        <p>Brocade</p>
+        <p>Cisco</p>
+        <p>Dell</p>
+        <p>Fortinet</p>
+        <p>HP</p>
+        <p>Ruckus</p>
+      </div>
+    </div>
+    <div class="w3-quarter">
+      <i class="material-symbols-outlined" style="font-size:48px">terminal</i>
+      <p class="w3-large">Scripting</p>
+      <p>Automating day-to-day tasks.</p>
+      <div class="list"> <!--#creates a properly formatted list from CSS.-->
+        <p>Powershell</p>
+        <p>Python</p>
+      </div>
+    </div>
+    <div class="w3-quarter">
+      <i class="material-symbols-outlined" style="font-size:48px">security</i>
+      <p class="w3-large">Security</p>
+      <p>Administering Next Generation Antivirus and SIEM tools.</p>
+      <div class="list"> <!--#creates a properly formatted list from CSS see top.-->
+        <p>AlienVault</p>
+        <p>Crowdstrike</p>
+        <p>Exabeam</p>
+        <p>Redcloak EDR</p>
+        <p>Splunk</p>
+        <p>Taegis VDR</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-2021-inkwell w3-padding-64">
+ <!--<div class="w3-xlarge w3-section">
+    <p>Looking for some sample powershell scripts to help automate a task? click the LinkedIn Icon below!</p>
+    <a href="https://github.com/Serial-Killa/Powershell"><i class="fa fa-github w3-hover-opacity"> </i></a>
+    <a href="https://www.linkedin.com/in/jeradhearne/"><i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>-->
+  <p>Powered by tutorials and coffee</p>
+</footer>
+</body>
+</html>

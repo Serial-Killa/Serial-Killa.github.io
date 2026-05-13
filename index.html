@@ -1,128 +1,190 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Jerad's Welcome Page</title>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">>
-<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-2021.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jerad Hearne | Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
 <style>
-body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
-
-body, html {
-  height: 100%;
-  line-height: 1.8;
-}
-.list p{
-  max-height: 12px;
-}
-.center{
-display: flex;
-align-items: center;
-justify-content: center
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: #0f172a;
+  color: #e5e7eb;
 }
 
-/*Full height image header#Background Image If wanted */
-.bgimg-1 {
-  background-position: center;
-  background-size: cover;
-  min-height: 100%;
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+  border-bottom: 1px solid #1f2937;
+}
+
+nav a {
+  color: #cbd5f5;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+nav a:hover {
+  color: #60a5fa;
+}
+
+.hero {
+  text-align: center;
+  padding: 120px 20px;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  color: #9ca3af;
+  max-width: 600px;
+  margin: auto;
+}
+
+.section {
+  padding: 80px 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.section h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: #1f2933;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.card h3 {
+  margin-bottom: 10px;
+}
+
+.card ul {
+  padding-left: 18px;
+  color: #9ca3af;
+}
+
+footer {
+  text-align: center;
+  padding: 40px;
+  border-top: 1px solid #1f2937;
+  font-size: 14px;
+  color: #6b7280;
 }
 </style>
 </head>
+
 <body>
 
-<!-- #Navbar (sit on top)-->
-<div class="w3-top">
-  <div class="w3-bar w3-white w3-card center" id="myNavbar">
-    <a href="#home" class="w3-bar-item w3-button w3-wide">About Me</a>
-     <!--#Right-sided navbar links --> 
-    <div class="w3-hide-small">
-      <a href="#skills" class="w3-bar-item w3-button w3-wide">Skills</a>
+<!--<nav>
+  <strong>Jerad Hearne</strong>
+  <div>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+  </div>
+</nav> -->
+
+<section id="about" class="hero">
+  <h1>Hello, I'm Jerad</h1>
+  <p>
+   Infrastructure Engineer specializing in networking and endpoint management.
+  </p>
+  <p>
+   Building resilient systems and continuously learning new technologies.
+  </p>
+</section>
+
+<section id="skills" class="section">
+  <h2>Skills</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Virtualization</h3>
+      <ul>
+        <li>Hyper-V</li>
+         <li>Proxmox</li>
+        <li>VMware ESXi</li>
+      </ul>
     </div>
-    <div class="w3-hide-small">
-      <a href="#Projects" class="w3-bar-item w3-button w3-wide">Projects</a>
+
+    <div class="card">
+      <h3>Networking</h3>
+      <ul>
+        <li>Cisco</li>
+        <li>Meraki</li>
+        <li>Fortinet</li>
+        <li>Ruckus</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Automation</h3>
+      <ul>
+        <li>PowerShell</li>
+        <li>Python</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Endpoint Management</h3>
+      <ul>
+        <li>CrowdStrike</li>
+        <li>Microsoft Defender</li>
+        <li>Microsoft Intune</li>
+      </ul>
     </div>
   </div>
-</div>
+</section>
 
-<!-- Header with full-height image -->
-<header class="bgimg-1 w3-display-container w3-2021-inkwell" id="home">
-  <div class="w3-display-left w3-text-white" style="padding:48px">
-    <span class="w3-jumbo w3-hide-small">Hello! I'm Jerad!</span><br>
-    <span class="w3-large">A network and systems engineer who loves learning.</span>
-    <p>I have experience building, maintaining and troubleshooting networks using a variety of vendor hardware and scripting languages.</p>
-  </div> 
-</header>
+<section id="projects" class="section">
+  <h2>Projects</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Network Automation Lab</h3>
+      <p>Python-based automation for provisioning and monitoring network devices.</p>
+        <ul>
+        <li>Meraki API Scripting </li>
+        <li>NETCAD Python Scripting</li>
+       <!-- <li>Certificate Authority</li>
+        <li>Cisco Modeling Lab</li>
+        <li>PiHole DNS filtering</li>
+        <li>Wuzuh Security Platform </li> -->
+        </ul>
+    </div>
 
-<!-- Skills Section -->
-<div class="w3-container" style="padding:128px 16px" id="skills">
-  <h3 class="w3-center">Skills</h3>
-  <div class="w3-row-padding w3-center" style="margin-top:64px">
-    <div class="w3-quarter">
-      <i class="material-symbols-outlined" style="font-size:48px">dns</i>
-      <p class="w3-large">Virtualization</p>
-      <div class="list"> <!--#creates a properly formatted list from CSS.-->
-        <p>Hyper-V</p>
-        <p>VMware ESXi</p>
-      </div>
-      </p>
-    </div>
-    <div class="w3-quarter">
-      <i class="material-symbols-outlined" style="font-size:48px">lan</i>
-      <p class="w3-large">Networking</p>
-      <div class="list"> <!--#creates a properly formatted list from CSS.-->
-        <p>Brocade</p>
-        <p>Cisco</p>
-        <p>Cisco Meraki</p>
-        <p>Dell</p>
-        <p>Fortinet</p>
-        <p>HP</p>
-        <p>Ruckus</p>
-      </div>
-    </div>
-    <div class="w3-quarter">
-      <i class="material-symbols-outlined" style="font-size:48px">terminal</i>
-      <p class="w3-large">Automation</p>
-      <div class="list"> <!--#creates a properly formatted list from CSS.-->
-        <p>Powershell</p>
-        <p>Python</p>
-      </div>
-    </div>
-    <div class="w3-quarter">
-      <i class="material-symbols-outlined" style="font-size:48px">security</i>
-      <p class="w3-large">Endpoint and Identity</p>
-      <div class="list"> <!--#creates a properly formatted list from CSS see top.-->
-        <p>
-          <p>AlienVault</p>
-          <p>Crowdstrike</p>
-          <p>Dell Secureworks</p>
-          <p>Expel.io</p>
-          <p>Microsoft Defender</p>
-          <p>Microsoft Identity Access Manager</p>
-        </p>
-      </div>
+    <div class="card">
+      <h3>Home Lab Infrastructure</h3>
+      <p>VMware & container-based environment for enterprise testing.</p>
+        <ul>
+        <li>Active Directory</li>
+        <li>Certificate Authority</li>
+        <li>Cisco Modeling Lab</li>
+        <li>PiHole DNS filtering</li>
+        <li>Wuzuh Security Platform </li>
+        </ul>
     </div>
   </div>
-</div>
+</section>
 
-<header class="bgimg-1 w3-display-container w3-2021-inkwell" id="Projects">
-  <div class="w3-display-left w3-text-white" style="padding:48px">
-    <span class="w3-jumbo w3-hide-small">Projects</span><br>
-    <span class="w3-large">A short lists of musings</span>
-    <!--start listing out projects that i've been part of or implemented.-->
-  </div> 
-</header>
-
-<!-- Footer -->
-<footer class="w3-center w3-2021-inkwell w3-padding-64">
-  <p>Powered by tutorials and coffee. Always a work in progress....</p>
+<footer>
+  Built with curiosity, caffeine, and continuous improvement.
 </footer>
+
 </body>
 </html>
-<!--W3schools helped with this simple portfolio desgin, check them out if you are new to HTML/CSS-->
-
-
